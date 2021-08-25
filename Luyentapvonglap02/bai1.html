@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let many=prompt("How many number of Fibonaci you want to see?");
+  let num1=1;
+  let num2=1;
+  document.write(num1+"<br>");
+  document.write(num2+"<br>");
+  for(let count=1;count<=(many-2);count++){
+    document.write((c=num1+num2)+"<br>");
+    num1=num2;
+    num2=c;
+  }
+</script>
+</body>
+</html>

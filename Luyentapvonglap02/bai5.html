@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let originmoney=prompt("How many u borrow from the bank from the first day?");
+    originmoney=parseInt(originmoney);
+    let ratebymonth=prompt("How about the rate by month?");
+    ratebymonth=parseFloat(ratebymonth);
+    let time=prompt("How many month u borrow already?");
+    time=parseInt(time);
+    let totalmoney=originmoney;
+    for(let count=1;count<=time;count++){
+        totalmoney*=(ratebymonth+1);
+    }alert("You need to pay the bank with money(in VND) is :"+totalmoney);
+</script>
+</body>
+</html>
